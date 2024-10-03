@@ -80,3 +80,43 @@ footer p{
 	padding:20px;
 	text-align:right;
 }
+
+/* ******************************************************************************
+								Tranforms
+*********************************************************************************/
+
+.shapes {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.shape1 {
+	width: 60px;
+	height: 60px;
+	background: lightblue;
+}
+
+.shape1:nth-child(2) {
+	/* use transform to rotate the element */
+	/* rotation is measured in degrees, up to 360 */
+	transform: rotate(45deg);
+}
+
+.shape1:nth-child(3) {
+	/* use transform:scale to change the size of an object 
+	1 is the default size
+	scale doesn't change the structure of the page, just makes the object look bigger or smaller*/
+	transform: scale(2);
+	/* one value scales width and height 
+	two values scales width then height */
+}
+
+.shape1:nth-child(4) {
+	/* skew adds a distortion to the element
+	it is also measured in degrees */
+	transform: skew(50deg);
+	/* skew can be negative or positive, depending on the way you want the element to distort
+	one value skews horizontal and vertical
+	two values skews horizontal then vertical
+	you can also use skewX() ot skewY() */
+}
